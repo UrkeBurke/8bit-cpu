@@ -68,3 +68,26 @@ Each instruction is 8 bits wide:
 | `JZ X` | `1101` | Jump to X if A is zero |
 | `LDA (B)` | `1110` | Load A from the address stored in B |
 | `HLT` | `1111` | Halt program execution |
+
+## Addressing Modes
+
+The CPU supports both direct and indirect addressing.
+
+- **Direct addressing:** The 4-bit operand specifies a memory address from `0x00` to `0x0F`.
+- **Indirect addressing:** Register B contains an 8-bit memory address, allowing access to the entire memory space from `0x00` to `0xFF`.
+
+Indirect addressing allows instructions `STA (B)`, `JMP (B)`, `JZ (B)`, and `LDA (B)` to access all 256 memory locations.
+
+## Memory
+
+The CPU uses a `256 × 8-bit` RAM.
+
+Each memory location stores one 8-bit value and is addressed using an 8-bit address.
+
+Direct addressing can access the first 16 memory locations (`0x00`–`0x0F`), while indirect addressing through register B allows access to the entire memory space (`0x00`–`0xFF`), as mentioned before.
+
+## Project File
+
+The CPU was designed and implemented using [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution). The version used was v4.1.0, and the project was not tested on any other versions.
+
+The complete Logisim Evolution project is available in `8bit_cpu.circ`.
