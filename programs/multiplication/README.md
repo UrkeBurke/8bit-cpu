@@ -31,10 +31,7 @@ The multiplication is performed using repeated addition.
 
 The program repeatedly adds `X` to the accumulator while decrementing `Y`:
 
-\[
-X \times Y =
-\underbrace{X + X + \dots + X}_{Y\text{ times}}
-\]
+**X × Y = X + X + ... + X** (Y times)
 
 The algorithm is:
 
