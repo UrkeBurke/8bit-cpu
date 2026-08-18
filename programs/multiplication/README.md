@@ -47,6 +47,27 @@ The algorithm is:
 10. Repeat from step 3.
 11. Halt when `Y = 0`.
 
+### Pseudocode
+
+The following shows the contents of memory, where each number represents a memory address:
+
+| Address | Instruction / Data | Description |
+|--------:|--------------------|-------------|
+| `0` | `X` | Input value X |
+| `1` | `Y` | Input value Y |
+| `2` | `0` | Sum `S`, initially 0 |
+| `3` | `LDB 0` | B = X |
+| `4` | `LDA 1` | A = Y |
+| `5` | `JZ 13` | If A = 0, jump to address 13 |
+| `6` | `LDA 2` | A = S |
+| `7` | `ADD` | A = A + B = S + X |
+| `8` | `STA 2` | MEM[2] = A = S + X |
+| `9` | `LDA 1` | A = Y |
+| `10` | `DEC` | A = A − 1 = Y − 1 |
+| `11` | `STA 1` | MEM[1] = A = Y − 1 |
+| `12` | `JMP 5` | Jump back to address 5 |
+| `13` | `HLT` | Halt program execution |
+
 ## Machine Code
 
 The complete machine code is provided in [`Multiplication.txt`](./Multiplication.txt).
