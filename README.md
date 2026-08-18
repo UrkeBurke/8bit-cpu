@@ -37,8 +37,10 @@ Both units share the same operational unit (datapath), while each has its own de
 The two specialized units implement:
 
 - `ADDABS2`
+  
 ![ADDABS2](images/ADDABS2.png)
 - `MUL2`
+  
 ![MUL2](images/MUL2.png)
 
 ### Programmable 8-bit CPU
