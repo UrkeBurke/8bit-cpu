@@ -89,8 +89,6 @@ The following shows the memory organization and instructions used by the program
 
 #### Higher Zone
 
-The array starts at memory location `32`, because the code ends at memory location `31`.
-
 | Address | Description |
 |--------:|-------------|
 | `32` | First array element |
@@ -98,7 +96,11 @@ The array starts at memory location `32`, because the code ends at memory locati
 | `...` | ... |
 | `31 + N` | Last array element |
 
-The Higher Zone does not have a fixed upper nor lower boundary. Its size depends on the number of array elements.
+The Higher Zone generally has neither a fixed starting nor ending address. It begins immediately after the Code Zone and extends for as many memory locations as required by the array.
+
+Its starting address therefore depends on the length of the program.
+
+In this implementation, the Code Zone occupies memory locations `16`–`31`, so the Higher Zone starts at `32`.
 
 ## Machine Code
 
@@ -125,7 +127,7 @@ For example, to calculate the sum of the array `1, 2, 3` the machine code should
 03 20 1F ... A0 F0 01 02 03
 ```
 
-An example machine code is provided in [`fibonacci.txt`](./fibonacci.txt), where the array is `4, 12, 22, 3, 9`.
+An example machine code is provided in [`arraySum.txt`](./arraySum.txt), where the array is `4, 12, 22, 3, 9`.
 
 ## Running the Program
 
@@ -134,7 +136,7 @@ An example machine code is provided in [`fibonacci.txt`](./fibonacci.txt), where
 3. Load the modified machine code into the RAM:
    - Right-click the RAM component.
    - Select the option to load the machine code file.
-   - Select [`multiplication.txt`](./multiplication.txt).
+   - Select [`arraySum.txt`](./arraySum.txt).
 4. Set the `START_FROM` input to `16` (`00010000`).
 5. Set `RESET = 0` to release the CPU from reset and start program execution.
 6. The program will execute automatically.
