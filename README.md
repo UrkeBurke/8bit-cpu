@@ -113,6 +113,14 @@ Each memory location stores one 8-bit value and is addressed using an 8-bit addr
 
 Direct addressing can access the first 16 memory locations (`0x00`–`0x0F`), while indirect addressing through register B allows access to the entire memory space (`0x00`–`0xFF`).
 
+## Example Programs
+
+The repository includes several example programs demonstrating the capabilities of the CPU:
+
+- [Multiplication](./programs/multiplication/) — multiplication using repeated addition
+- [Fibonacci](./programs/fibonacci/) — computes the N-th and (N+1)-st Fibonacci numbers
+- [ArraySum](./programs/arraySum/) — sums an array of arbitrary length
+
 ## Project File
 
 The project was developed and tested using [Logisim Evolution v4.1.0](https://github.com/logisim-evolution/logisim-evolution) and has not been tested on other versions.
