@@ -68,7 +68,7 @@ The following shows the contents of memory, where each number represents a memor
 | `12` | `JMP 5` | Jump back to address 5 |
 | `13` | `HLT` | Halt program execution |
 
-## Machine Code and running the program
+## Machine Code
 
 The following machine code is designed to be reusable.
 
@@ -94,6 +94,14 @@ the beginning of the machine code should be:
 ```
 05 0B 00 ...
 ```
-Paste the altered machine code into the [`multiplication.txt`](./multiplication.txt) file, right-click the RAM memory and load it in.
 
 An example machine code is provided in [`multiplication.txt`](./multiplication.txt), where the numbers being multiplied are 13 and 9.
+
+## Running the program
+
+Start the clock at any frequency. Click the RESET pin (RESET = 1) and let the clock tick at least 4 times (2 cycles).
+Paste the altered machine code into the [`multiplication.txt`](./multiplication.txt) file, right-click the RAM memory and load it in.
+Set the START_FROM input to 3 (00000011).
+Click the RESET pin again (RESET = 0) and the program will start running.
+When the program stops an LED connected to the Control Unit's HLT output will light up as a signal.
+To start the program again (or any other program) repeat the procedure.
