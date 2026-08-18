@@ -6,7 +6,7 @@ A program for the 8-bit CPU that calculates the sum of an array with an arbitrar
 
 The program takes one non-negative whole number `N` as input and an array of `N` elements:
 
-The input value `N` is stored in memory location `0`, and the array begins from the memory location `32`.
+The input value `N` is stored in memory location `0`, and the array begins at memory location `32`.
 
 ## Output
 
@@ -34,7 +34,7 @@ The memory is divided into three logical zones:
 
 - **Fixed Zone:** The first 16 memory locations (`0`–`15`) are reserved for fixed data and control information.
 - **Code Zone:** The program instructions start at memory location `16`.
-- **Higher Zone:** The array is stored starting at memory location `32` and extends for `N` elements.
+- **Higher Zone:** The array is stored immediately after the Code Zone and extends for `N` elements.
 
 The program uses an 8-bit pointer stored in the Fixed Zone to keep track of the current array element.
 
@@ -122,7 +122,7 @@ Examples:
 - `5` → `05`
 - `11` → `0B`
 
-For example, to calculate the sum of the array `1, 2, 3` the machine code should look like:
+For example, to calculate the sum of the array `1, 2, 3`, the machine code should look like:
 ```
 03 20 1F ... A0 F0 01 02 03
 ```
