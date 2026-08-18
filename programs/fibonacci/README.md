@@ -37,8 +37,6 @@ MEM[14] = 1
 
 ## Algorithm
 
-## Algorithm
-
 The program calculates the N-th and (N+1)-st Fibonacci numbers using an iterative approach.
 
 The algorithm maintains two consecutive Fibonacci numbers in memory:
@@ -110,10 +108,10 @@ An example machine code is provided in [`fibonacci.txt`](./fibonacci.txt), where
    - Right-click the RAM component.
    - Select the option to load the machine code file.
    - Select [`multiplication.txt`](./multiplication.txt).
-4. Set the `START_FROM` input to `3` (`00000011`).
+4. Set the `START_FROM` input to `0` (`00000000`).
 5. Set `RESET = 0` to release the CPU from reset and start program execution.
 6. The program will execute automatically.
 7. When the program finishes, the LED connected to the Control Unit's `HLT` output will turn on.
 8. To run the program again, repeat the procedure from step 2.
 
-The result is stored in memory location `2`.
+The result is stored in memory location `13`.
