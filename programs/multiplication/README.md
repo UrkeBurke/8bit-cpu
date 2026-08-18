@@ -70,14 +70,12 @@ The following shows the contents of memory, where each number represents a memor
 
 ## Machine Code
 
-The complete machine code is provided in [`Multiplication.txt`](./Multiplication.txt).
+The following machine code is designed to be reusable.
 
 ```text
 v2.0 raw
 XX YY 00 20 11 DD 12 50 32 11 60 31 C5 F0
 ```
-
-The machine code is designed to be reusable.
 
 To change the input values, replace `XX` and `YY` with the desired values in hexadecimal. The remaining instructions should not be modified.
 
@@ -96,3 +94,5 @@ the beginning of the machine code should be:
 ```
 05 0B 00 ...
 ```
+
+An example machine code is provided in [`Multiplication.txt`](./Multiplication.txt), where the numbers being multiplied are 13 and 9.
