@@ -107,7 +107,7 @@ An example machine code is provided in [`fibonacci.txt`](./fibonacci.txt), where
 3. Load the modified machine code into the RAM:
    - Right-click the RAM component.
    - Select the option to load the machine code file.
-   - Select [`multiplication.txt`](./multiplication.txt).
+   - Select [`fibonacci.txt`](./fibonacci.txt).
 4. Set the `START_FROM` input to `0` (`00000000`).
 5. Set `RESET = 0` to release the CPU from reset and start program execution.
 6. The program will execute automatically.
