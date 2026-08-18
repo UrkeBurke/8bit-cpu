@@ -4,22 +4,46 @@ A programmable 8-bit CPU designed and implemented from basic digital logic compo
 
 ## Overview
 
-This project implements a fully functional programmable 8-bit CPU built from scratch in Logisim Evolution.
+This project originally started as an attempt to apply the knowledge gained from the **Fundamentals of Computer Engineering (Osnovi računarske tehnike)** course at the **School of Electrical Engineering, University of Belgrade (ETF)**. The original goal was to design an operational unit (datapath) and a specialized control unit for a specific computational task from the bottom up.
 
-The CPU features an 8-bit datapath, a custom instruction set, an arithmetic and logic unit, registers, a program counter, an instruction register, dedicated control units, and 256 × 8-bit RAM.
+Out of curiosity, the project gradually evolved beyond its original scope into a fully functional programmable 8-bit CPU designed and implemented from scratch in Logisim Evolution.
 
-The main goal of the project was to design the CPU architecture and control logic manually, rather than relying on pre-built CPU components.
+The project explores the design of digital systems at both the application-specific and general-purpose levels, from dedicated hardware implementations to a programmable processor capable of executing different instructions and programs.
+
+The fundamental idea behind this project was to build its components from scratch. Alongside the main CPU, the project therefore includes several custom modules that were independently designed and implemented.
+
+Although the main CPU uses Logisim Evolution's built-in RAM component for practicality and optimization, I also implemented a custom RAM module from basic digital logic components as part of the project. The custom implementation was developed primarily for experimentation and optimization rather than being required by the CPU architecture.
 
 ## Features
 
+### Custom Modules
+
+The project includes custom-built combinational and sequential logic modules implemented from basic digital logic components, including:
+
+- Decoders and Multiplexers
+- an ALU
+- Flip-flops
+- Registers
+- Other supporting modules
+
+### Specialized Processing Units
+
+The project includes two dedicated processing units, each designed for a specific computational task. Each unit consists of:
+
+- A custom operational unit (datapath) - fixed for both units
+- A dedicated control unit
+
+The two specialized units implement:
+
+- `ADDABS2`
+- `MUL2`
+
+### Programmable 8-bit CPU
+
+Finally, the project includes a general-purpose programmable 8-bit CPU featuring:
+
 - 8-bit datapath
-- Custom programmable instruction set
-- Program Counter (PC)
-- Instruction Register (IR)
-- Register File (Registers A and B)
-- Arithmetic Logic Unit (ALU)
-- Control Unit
-- 256 × 8-bit RAM
+- Custom instruction set
 - Direct and indirect addressing
 - Conditional and unconditional jumps
 - Two-phase instruction execution
@@ -86,7 +110,7 @@ The CPU uses a `256 × 8-bit` RAM.
 
 Each memory location stores one 8-bit value and is addressed using an 8-bit address.
 
-Direct addressing can access the first 16 memory locations (`0x00`–`0x0F`), while indirect addressing through register B allows access to the entire memory space (`0x00`–`0xFF`), as mentioned before.
+Direct addressing can access the first 16 memory locations (`0x00`–`0x0F`), while indirect addressing through register B allows access to the entire memory space (`0x00`–`0xFF`).
 
 ## Project File
 
