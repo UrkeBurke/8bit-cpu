@@ -47,7 +47,7 @@ Each instruction is 8 bits wide:
 │   OPCODE   │  OPERAND   │
 │   4 bits   │   4 bits   │
 └────────────┴────────────┘
-
+```
 ## Instruction Set
 
 | Mnemonic | Opcode | Description |
