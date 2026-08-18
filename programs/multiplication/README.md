@@ -97,11 +97,18 @@ the beginning of the machine code should be:
 
 An example machine code is provided in [`multiplication.txt`](./multiplication.txt), where the numbers being multiplied are 13 and 9.
 
-## Running the program
+## Running the Program
 
-Start the clock at any frequency. Click the RESET pin (RESET = 1) and let the clock tick at least 4 times (2 cycles).
-Paste the altered machine code into the [`multiplication.txt`](./multiplication.txt) file, right-click the RAM memory and load it in.
-Set the START_FROM input to 3 (00000011).
-Click the RESET pin again (RESET = 0) and the program will start running.
-When the program stops an LED connected to the Control Unit's HLT output will light up as a signal.
-To start the program again (or any other program) repeat the procedure.
+1. Set the clock to any desired frequency.
+2. Set `RESET = 1` and let the clock tick at least 4 times (2 complete cycles).
+3. Load the modified machine code into the RAM:
+   - Right-click the RAM component.
+   - Select the option to load the machine code file.
+   - Select [`multiplication.txt`](./multiplication.txt).
+4. Set the `START_FROM` input to `3` (`00000011`).
+5. Set `RESET = 0` to release the CPU from reset and start program execution.
+6. The program will execute automatically.
+7. When the program finishes, the LED connected to the Control Unit's `HLT` output will turn on.
+8. To run the program again, repeat the procedure from step 2.
+
+The result is stored in memory location `2`.
