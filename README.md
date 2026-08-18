@@ -53,6 +53,8 @@ The project also includes a programmable 8-bit CPU featuring:
 - Conditional and unconditional jumps
 - Two-phase instruction execution
 
+**Note** : Since the CPU uses 8-bit registers and memory, arithmetic results are limited to 8 bits. Results exceeding `255` wrap around modulo `256`.
+
 ## Architecture
 
 The CPU consists of the following main components:
