@@ -114,4 +114,4 @@ An example machine code is provided in [`fibonacci.txt`](./fibonacci.txt), where
 7. When the program finishes, the LED connected to the Control Unit's `HLT` output will turn on.
 8. To run the program again, repeat the procedure from step 2.
 
-The result is stored in memory location `13`.
+The results are stored in memory locations `13` and `14`, containing `Fₙ` and `Fₙ₊₁`, respectively.
