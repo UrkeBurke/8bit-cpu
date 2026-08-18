@@ -68,7 +68,7 @@ The following shows the contents of memory, where each number represents a memor
 | `12` | `JMP 5` | Jump back to address 5 |
 | `13` | `HLT` | Halt program execution |
 
-## Machine Code
+## Machine Code and running the program
 
 The following machine code is designed to be reusable.
 
@@ -94,5 +94,6 @@ the beginning of the machine code should be:
 ```
 05 0B 00 ...
 ```
+Paste the altered machine code into the [`multiplication.txt`](./multiplication.txt) file, right-click the RAM memory and load it in.
 
-An example machine code is provided in [`Multiplication.txt`](./Multiplication.txt), where the numbers being multiplied are 13 and 9.
+An example machine code is provided in [`multiplication.txt`](./multiplication.txt), where the numbers being multiplied are 13 and 9.
