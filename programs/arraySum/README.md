@@ -4,7 +4,7 @@ A program for the 8-bit CPU that calculates the sum of an array with an arbitrar
 
 ## Input
 
-The program takes one non-negative whole number `N` as input and an array of `N` elements:
+The program takes one positive whole number `N` as input and an array of `N` elements (the array has to have at least one element):
 
 The input value `N` is stored in memory location `0`, and the array begins at memory location `32`.
 
