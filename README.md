@@ -1,6 +1,6 @@
 # 8-bit CPU
 
-A programmable 8-bit CPU designed and implemented from basic digital logic components in Logisim Evolution.
+A programmable 8-bit CPU designed and implemented from scratch using basic digital logic components in Logisim Evolution.
 
 ## Overview
 
@@ -21,17 +21,16 @@ Although the main CPU uses Logisim Evolution's built-in RAM component for practi
 The project includes custom-built combinational and sequential logic modules implemented from basic digital logic components, including:
 
 - Decoders and Multiplexers
-- an ALU
+- Arithmetic Logic Unit (ALU)
 - Flip-flops
 - Registers
 - Other supporting modules
 
 ### Specialized Processing Units
 
-The project includes two dedicated processing units, each designed for a specific computational task. Each unit consists of:
+The project includes two dedicated processing units designed for specific computational tasks.
 
-- A custom operational unit (datapath) - fixed for both units
-- A dedicated control unit
+Both units share the same operational unit (datapath), while each has its own dedicated control unit designed specifically for its respective task.
 
 The two specialized units implement:
 
@@ -40,7 +39,7 @@ The two specialized units implement:
 
 ### Programmable 8-bit CPU
 
-Finally, the project includes a general-purpose programmable 8-bit CPU featuring:
+The project also includes a general-purpose programmable 8-bit CPU featuring:
 
 - 8-bit datapath
 - Custom instruction set
@@ -114,6 +113,9 @@ Direct addressing can access the first 16 memory locations (`0x00`–`0x0F`), wh
 
 ## Project File
 
-The CPU was designed and implemented using [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution). The version used was v4.1.0, and the project was not tested on any other versions.
+## Project File
 
-The complete Logisim Evolution project is available in `8bit_cpu.circ`.
+The project was developed and tested using [Logisim Evolution v4.1.0](https://github.com/logisim-evolution/logisim-evolution) and has not been tested on other versions.
+
+The complete project is available in `8bit_cpu.circ`. 
+
