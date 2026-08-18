@@ -96,9 +96,7 @@ The following shows the memory organization and instructions used by the program
 | `...` | ... |
 | `31 + N` | Last array element |
 
-The Higher Zone generally has neither a fixed starting nor ending address. It begins immediately after the Code Zone and extends for as many memory locations as required by the array.
-
-Its starting address therefore depends on the length of the program.
+The Higher Zone does not have a fixed starting address in the general case. It begins immediately after the Code Zone, so its starting address depends on the size of the program.
 
 In this implementation, the Code Zone occupies memory locations `16`–`31`, so the Higher Zone starts at `32`.
 
