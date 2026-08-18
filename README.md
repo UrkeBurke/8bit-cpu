@@ -71,6 +71,8 @@ Instructions are executed in two phases:
 - **Phase F0:** Instruction fetch
 - **Phase F1:** Instruction execution
 
+The CPU runs on an accumulator-based architecture (one-address machine) - register A is the accumulator.
+
 ## Instruction Format
 
 Each instruction is 8 bits wide:
@@ -101,6 +103,8 @@ Each instruction is 8 bits wide:
 | `JZ X` | `1101` | Jump to X if A is zero |
 | `LDA (B)` | `1110` | Load A from the address stored in B |
 | `HLT` | `1111` | Halt program execution |
+
+**Note** : Since register A is the accumulator, so the result of every logic and arithmetic operation gets stored into register A.
 
 ## Addressing Modes
 
