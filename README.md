@@ -2,7 +2,7 @@
 
 ![8-bit CPU](images/cpu_overview.png)
 
-A programmable 8-bit CPU designed and implemented from scratch using basic digital logic components in Logisim Evolution.
+A programmable 8-bit CPU designed and implemented from scratch using basic digital logic components in [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution).
 
 ## Overview
 
