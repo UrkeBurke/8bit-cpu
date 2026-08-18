@@ -4,9 +4,11 @@ A programmable 8-bit CPU designed and implemented from basic digital logic compo
 
 ## Overview
 
-This project implements a fully functional programmable 8-bit CPU built in Logisim Evolution.
+This project implements a fully functional programmable 8-bit CPU built from scratch in Logisim Evolution.
 
-The CPU features an 8-bit datapath, a custom instruction set, a control unit, an ALU, registers, a program counter, an instruction register, and 256 × 8-bit RAM.
+The CPU features an 8-bit datapath, a custom instruction set, an arithmetic and logic unit, registers, a program counter, an instruction register, dedicated control units, and 256 × 8-bit RAM.
+
+The main goal of the project was to design the CPU architecture and control logic manually, rather than relying on pre-built CPU components.
 
 ## Features
 
