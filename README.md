@@ -20,7 +20,7 @@ Although the main CPU uses Logisim Evolution's built-in RAM component for practi
 
 The project includes custom-built combinational and sequential logic modules implemented from basic digital logic components, including:
 
-- Decoders and Multiplexers
+- Decoders and multiplexers
 - Arithmetic Logic Unit (ALU)
 - Flip-flops
 - Registers
