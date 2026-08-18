@@ -9,7 +9,7 @@ The program takes two non-negative whole numbers as input:
 - `X`
 - `Y`
 
-The input values are stored in memory locations `0` and `1`.
+The input values are stored in memory locations `0` and `1`, respectively.
 
 It is recommended to use the smaller value as `Y`, since the multiplication is performed using repeated addition.
 
