@@ -41,7 +41,7 @@ The two specialized units implement:
 
 ### Programmable 8-bit CPU
 
-The project also includes a general-purpose programmable 8-bit CPU featuring:
+The project also includes a programmable 8-bit CPU featuring:
 
 - 8-bit datapath
 - Custom instruction set
