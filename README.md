@@ -47,3 +47,24 @@ Each instruction is 8 bits wide:
 │   OPCODE   │  OPERAND   │
 │   4 bits   │   4 bits   │
 └────────────┴────────────┘
+
+## Instruction Set
+
+| Mnemonic | Opcode | Description |
+|----------|--------|-------------|
+| `STA (B)` | `0000` | Store A at the memory address stored in B |
+| `LDA X` | `0001` | Load A from memory address X |
+| `LDB X` | `0010` | Load B from memory address X |
+| `STA X` | `0011` | Store A at memory address X |
+| `INC` | `0100` | Increment A |
+| `ADD` | `0101` | Add B to A |
+| `DEC` | `0110` | Decrement A |
+| `SUB` | `0111` | Subtract B from A |
+| `AND` | `1000` | Bitwise AND of A and B |
+| `OR` | `1001` | Bitwise OR of A and B |
+| `JMP (B)` | `1010` | Jump to the address stored in B |
+| `JZ (B)` | `1011` | Jump to B if A is zero |
+| `JMP X` | `1100` | Jump to address X |
+| `JZ X` | `1101` | Jump to X if A is zero |
+| `LDA (B)` | `1110` | Load A from the address stored in B |
+| `HLT` | `1111` | Halt program execution |
