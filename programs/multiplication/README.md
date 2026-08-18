@@ -74,4 +74,7 @@ For example, to calculate:
 ```text
 5 × 11
 ```
-the beginning of the machine code should be: 05 0B 00 ...
+the beginning of the machine code should be:
+```
+05 0B 00 ...
+```
