@@ -23,7 +23,7 @@ The result `X × Y` is stored in memory location `2`.
 |---------|-------------|
 | `0` | Input `X` |
 | `1` | Input `Y` |
-| `2` | Result / accumulator |
+| `2` | Result |
 
 ## Algorithm
 
@@ -57,3 +57,21 @@ The complete machine code is provided in [`Multiplication.txt`](./Multiplication
 ```text
 v2.0 raw
 XX YY 00 20 11 DD 12 50 32 11 60 31 C5 F0
+```
+
+The machine code is designed to be reusable.
+
+To change the input values, replace `XX` and `YY` with the desired values in hexadecimal. The remaining instructions should not be modified.
+
+Examples:
+
+- `5` → `05`
+- `11` → `0B`
+- `56` → `38`
+
+For example, to calculate:
+
+```text
+5 × 11
+```
+the beginning of the machine code should be: 05 0B 00 ...
